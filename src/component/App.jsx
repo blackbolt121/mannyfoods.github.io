@@ -6,6 +6,7 @@ import Login from "./Login";
 import NotFound from "./NotFound";
 import Register from "./Register";
 import Footer from "./Footer";
+import Contacto from "./Contacto";
 import "../styles/App.css"
 export default class App extends Component {
     render() {
@@ -16,8 +17,9 @@ export default class App extends Component {
                         <Route path="/" element={<Home/>}/>
                         <Route path="/index.html" element={<Navigate to={"/"}/>}/>
                         <Route path="/acerca" caseSensitive={false} element={<Acerca/>}></Route>
-                        <Route path="/login" aseSensitive={false} element={<Login/>}></Route>
-                        <Route path="/register" aseSensitive={false} element={<Register/>}/>
+                        <Route path="/login" caseSensitive={false} element={<Login/>}></Route>
+                        <Route path="/register" caseSensitive={false} element={<Register/>}/>
+                        <Route path="/contacto" caseSensitive={false} element={<Contacto/>}/>
                         <Route path="*" element={<NotFound/>}/>
                     </Routes>
                     <Footer/>
